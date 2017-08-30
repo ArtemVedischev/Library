@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.menu-wrap {
+	width: 100%;
+	display: block;
+	background-color: #ccc;
+}
+.menu {
+	list-style: none;
+}
+.menu li {
+	display: inline-block;
+	font-weight: bold;
+	width: 75px;
+	text-align: center;
+}
+.menu li a:hover {
+	background-color: #fff;
+}
+.menu li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding: 0.2em;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #222;
+}
+#show-menu, .navicon {
+	display: none;
+	margin-left: 1em;
+	cursor: pointer;
+}
+@media screen and (max-width : 800px){
+	.navicon {
+		display: block;
+	}
+	.menu {
+		display: none;
+	}
+	.menu li {
+		width: 100%;
+		text-align: left;
+	}
+}
+/*  IE9+
+.menu-wrap input[type=checkbox]:checked ~ .menu {
+	display: block;
+}
+*/
+.show {
+	display: block;
+}
